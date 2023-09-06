@@ -1,0 +1,25 @@
+<style>
+        h1 {background-color: aqua;}
+        h2 {background-color:yellow;}
+        
+        /*선택자 class 사용 : .(점) */
+        .red {background-color:red;}
+        .green{background-color:green;}
+        .yellow {background-color : yellow;}
+        
+        /*선택자 # : id 속성명 의미 */
+        #yellow {background-color : brown;}
+        
+        /*선택자 우선순위 : id, class 태그(tag) 순으로 적용됨*/
+        p{
+            background-color: gray; /*background 설정 안되어있는 곳들 설정*/
+            border : 2px solid blue;
+        }
+        div{
+            border : 2px dotted red;
+        }
+        div > p {background-color : orange;}
+        
+        /*p태그 + 클래스명 green 적용된 선택자는 클래스명 green 선택자보다 가중치가 높다(크다)*/
+        p.green {background-color : greenyellow;} /*가중치가 더 높기 때문에 적용된다(작성순서와는 관계없이)*/
+    </style>
